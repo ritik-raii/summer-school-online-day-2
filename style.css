@@ -1,0 +1,81 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Profile card wrapper */
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+#profile-pic {
+  display: block;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #2196f3;
+}
+
+/* Hobbies list */
+.hobbies {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.hobbies li {
+  background-color: #e3f2fd;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.hobbies li:hover {
+  background-color: #bbdefb;
+}
+
+/* Contact links */
+.contact a[href] {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Bonus: hover effects */
+.contact a[href]:hover {
+  color: #e65100;
+  text-decoration: underline;
+}
